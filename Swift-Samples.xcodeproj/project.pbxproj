@@ -6,11 +6,34 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		3CA8E73E26CA89FF003AFD9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CA8E73A26CA89FE003AFD9E /* PhotoViewer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3CA8E72326CA89FC003AFD9E;
+			remoteInfo = PhotoViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3CA8E73A26CA89FE003AFD9E /* PhotoViewer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PhotoViewer.xcodeproj; path = PhotoViewer/PhotoViewer.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		3CA8E6C726CA84F0003AFD9E = {
 			isa = PBXGroup;
 			children = (
+				3CA8E73A26CA89FE003AFD9E /* PhotoViewer.xcodeproj */,
 			);
+			sourceTree = "<group>";
+		};
+		3CA8E73B26CA89FE003AFD9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CA8E73F26CA89FF003AFD9E /* PhotoViewer.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -31,11 +54,27 @@
 			);
 			mainGroup = 3CA8E6C726CA84F0003AFD9E;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3CA8E73B26CA89FE003AFD9E /* Products */;
+					ProjectRef = 3CA8E73A26CA89FE003AFD9E /* PhotoViewer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3CA8E73F26CA89FF003AFD9E /* PhotoViewer.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = PhotoViewer.app;
+			remoteRef = 3CA8E73E26CA89FF003AFD9E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin XCBuildConfiguration section */
 		3CA8E6CC26CA84F0003AFD9E /* Debug */ = {
