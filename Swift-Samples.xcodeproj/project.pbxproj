@@ -14,16 +14,25 @@
 			remoteGlobalIDString = 3CA8E72326CA89FC003AFD9E;
 			remoteInfo = PhotoViewer;
 		};
+		3CA8E78226CA8DF8003AFD9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CA8E77E26CA8DF7003AFD9E /* GuessTheFlag.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3CA8E76726CA8DF5003AFD9E;
+			remoteInfo = GuessTheFlag;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3CA8E73A26CA89FE003AFD9E /* PhotoViewer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PhotoViewer.xcodeproj; path = PhotoViewer/PhotoViewer.xcodeproj; sourceTree = "<group>"; };
+		3CA8E77E26CA8DF7003AFD9E /* GuessTheFlag.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GuessTheFlag.xcodeproj; path = GuessTheFlag/GuessTheFlag.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		3CA8E6C726CA84F0003AFD9E = {
 			isa = PBXGroup;
 			children = (
+				3CA8E77E26CA8DF7003AFD9E /* GuessTheFlag.xcodeproj */,
 				3CA8E73A26CA89FE003AFD9E /* PhotoViewer.xcodeproj */,
 			);
 			sourceTree = "<group>";
@@ -32,6 +41,14 @@
 			isa = PBXGroup;
 			children = (
 				3CA8E73F26CA89FF003AFD9E /* PhotoViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CA8E77F26CA8DF7003AFD9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CA8E78326CA8DF8003AFD9E /* GuessTheFlag.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +73,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 3CA8E77F26CA8DF7003AFD9E /* Products */;
+					ProjectRef = 3CA8E77E26CA8DF7003AFD9E /* GuessTheFlag.xcodeproj */;
+				},
+				{
 					ProductGroup = 3CA8E73B26CA89FE003AFD9E /* Products */;
 					ProjectRef = 3CA8E73A26CA89FE003AFD9E /* PhotoViewer.xcodeproj */;
 				},
@@ -72,6 +93,13 @@
 			fileType = wrapper.application;
 			path = PhotoViewer.app;
 			remoteRef = 3CA8E73E26CA89FF003AFD9E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3CA8E78326CA8DF8003AFD9E /* GuessTheFlag.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = GuessTheFlag.app;
+			remoteRef = 3CA8E78226CA8DF8003AFD9E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
