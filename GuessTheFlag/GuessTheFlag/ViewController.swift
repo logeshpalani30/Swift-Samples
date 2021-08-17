@@ -54,31 +54,36 @@ class ViewController: UIViewController {
         
         if totalTried==10 {
             title = "Game Over"
-            let ac = UIAlertController(title:  title, message: "Game over", preferredStyle: .alert)
-                       
-            ac.addAction(UIAlertAction(title: "OK", style: .default,handler: nil))
-            
-            present(ac, animated: true)
+            ShowAlert(title: title, message: "Restart Game",alertAction: askQuestion)
             score = 0
             totalTried = 0;
         }
         if title != "Game Over"   {
             if sender.tag == correctAnswer {
                 score+=1
+                title = "Wow"
+                ShowAlert(title: title, message: "You're correct",alertAction: askQuestion)
             }
             else {
                 score-=1
                 title = "Wrong Answer"
-                let ac = UIAlertController(title:  title, message: "You're wrong", preferredStyle: .alert)
-                           
-                ac.addAction(UIAlertAction(title: "OK", style: .default,handler: askQuestion(action:)))
                 
-                present(ac, animated: true)
+                ShowAlert(title: title, message: "You're wrong",alertAction: askQuestion)
             }
         }
         
-       
         countButton.title = String(score)
+    }
+    func ShowAlert(title: String, message: String, alertAction: ((UIAlertAction) -> Void)? = nil ) {
+        let ac = UIAlertController(title:  title, message: message, preferredStyle: .alert)
+                   
+        if let alertActionUnwrapped = alertAction {
+            ac.addAction(UIAlertAction(title: "OK", style: .default,handler: alertActionUnwrapped))
+        }
+        else{
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+        }
+        present(ac, animated: true)
     }
 }
 
