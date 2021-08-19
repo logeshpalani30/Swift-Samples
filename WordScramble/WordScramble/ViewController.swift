@@ -24,10 +24,11 @@ class ViewController: UITableViewController {
             allWords = ["Scamble"]
         }
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(promptAddDialog))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(startGame))
         startGame()
     }
     
-    func startGame() {
+    @objc func startGame() {
         title = allWords.randomElement()
         usedWords.removeAll(keepingCapacity: true)
         tableView.reloadData()
@@ -57,8 +58,6 @@ class ViewController: UITableViewController {
         present(ac, animated: true)
     }
     func submit(_ answer: String) {
-        let title: String
-        let message: String
         if isPossible(word: answer) {
             if isOriginal(word: answer) {
                 if isReal(word: answer) {
@@ -68,17 +67,18 @@ class ViewController: UITableViewController {
                     tableView.insertRows(at: [indexPath], with: .automatic)
                     return
                 } else {
-                    title = "Word is not recognized"
-                    message = "You can't make them up, you know"
+                    showErrorMessage(title: "Word is not recognized", message: "You can't make them up, you know")
                 }
             } else {
-                title = "Already exist"
-                message = "This word is already added"
+                showErrorMessage(title: "Already exist", message: "This word is already added")
             }
         }else{
-            title = "Not possible"
-            message = "The entered word is not possible"
+            showErrorMessage(title: "Not possible", message:  "The entered word is not possible")
         }
+       
+    }
+    
+    func showErrorMessage(title: String, message: String) {
         let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .default))
         present(ac, animated: true)
@@ -98,7 +98,7 @@ class ViewController: UITableViewController {
         return true
     }
     func isOriginal(word: String) -> Bool {
-        return !usedWords.contains(word)
+        return !usedWords.contains(word) && word.count > 3
     }
     func isReal(word: String) -> Bool {
         let checker = UITextChecker()

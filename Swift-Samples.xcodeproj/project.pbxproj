@@ -35,6 +35,13 @@
 			remoteGlobalIDString = 3CA8E76726CA8DF5003AFD9E;
 			remoteInfo = GuessTheFlag;
 		};
+		3CDCA57D26CE44EA00BCA491 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CDCA57926CE44EA00BCA491 /* AdvancedAutoLayout.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3CDCA56226CE44E800BCA491;
+			remoteInfo = AdvancedAutoLayout;
+		};
 		3CDD86C026CBBD8100E8503C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3CDD86BC26CBBD8000E8503C /* CountryFlags.xcodeproj */;
@@ -56,6 +63,7 @@
 		3C788F0826CBA26C00EA5FE0 /* SocialShare.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SocialShare.xcodeproj; path = SocialShare/SocialShare.xcodeproj; sourceTree = "<group>"; };
 		3CA8E73A26CA89FE003AFD9E /* PhotoViewer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PhotoViewer.xcodeproj; path = PhotoViewer/PhotoViewer.xcodeproj; sourceTree = "<group>"; };
 		3CA8E77E26CA8DF7003AFD9E /* GuessTheFlag.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GuessTheFlag.xcodeproj; path = GuessTheFlag/GuessTheFlag.xcodeproj; sourceTree = "<group>"; };
+		3CDCA57926CE44EA00BCA491 /* AdvancedAutoLayout.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AdvancedAutoLayout.xcodeproj; path = AdvancedAutoLayout/AdvancedAutoLayout.xcodeproj; sourceTree = "<group>"; };
 		3CDD86BC26CBBD8000E8503C /* CountryFlags.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CountryFlags.xcodeproj; path = CountryFlags/CountryFlags.xcodeproj; sourceTree = "<group>"; };
 		3CDD871826CBD1C200E8503C /* EasyBrowser.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EasyBrowser.xcodeproj; path = EasyBrowser/EasyBrowser.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +88,7 @@
 		3CA8E6C726CA84F0003AFD9E = {
 			isa = PBXGroup;
 			children = (
+				3CDCA57926CE44EA00BCA491 /* AdvancedAutoLayout.xcodeproj */,
 				3C3CE58026CD387A0008C2AB /* WordScramble.xcodeproj */,
 				3CDD871826CBD1C200E8503C /* EasyBrowser.xcodeproj */,
 				3CDD86BC26CBBD8000E8503C /* CountryFlags.xcodeproj */,
@@ -101,6 +110,14 @@
 			isa = PBXGroup;
 			children = (
 				3CA8E78326CA8DF8003AFD9E /* GuessTheFlag.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CDCA57A26CE44EA00BCA491 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CDCA57E26CE44EA00BCA491 /* AdvancedAutoLayout.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +157,10 @@
 			mainGroup = 3CA8E6C726CA84F0003AFD9E;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = 3CDCA57A26CE44EA00BCA491 /* Products */;
+					ProjectRef = 3CDCA57926CE44EA00BCA491 /* AdvancedAutoLayout.xcodeproj */;
+				},
 				{
 					ProductGroup = 3CDD86BD26CBBD8000E8503C /* Products */;
 					ProjectRef = 3CDD86BC26CBBD8000E8503C /* CountryFlags.xcodeproj */;
@@ -198,6 +219,13 @@
 			fileType = wrapper.application;
 			path = GuessTheFlag.app;
 			remoteRef = 3CA8E78226CA8DF8003AFD9E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3CDCA57E26CE44EA00BCA491 /* AdvancedAutoLayout.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = AdvancedAutoLayout.app;
+			remoteRef = 3CDCA57D26CE44EA00BCA491 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		3CDD86C126CBBD8100E8503C /* CountryFlags.app */ = {
