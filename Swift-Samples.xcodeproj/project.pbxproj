@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
+		3C2BE32026CE88E800324B65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C2BE31C26CE88E700324B65 /* ShoppingList.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3C2BE30526CE88E600324B65;
+			remoteInfo = ShoppingList;
+		};
 		3C3CE58926CD387B0008C2AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3C3CE58026CD387A0008C2AB /* WordScramble.xcodeproj */;
@@ -59,6 +66,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C2BE31C26CE88E700324B65 /* ShoppingList.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShoppingList.xcodeproj; path = ShoppingList/ShoppingList.xcodeproj; sourceTree = "<group>"; };
 		3C3CE58026CD387A0008C2AB /* WordScramble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WordScramble.xcodeproj; path = WordScramble/WordScramble.xcodeproj; sourceTree = "<group>"; };
 		3C788F0826CBA26C00EA5FE0 /* SocialShare.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SocialShare.xcodeproj; path = SocialShare/SocialShare.xcodeproj; sourceTree = "<group>"; };
 		3CA8E73A26CA89FE003AFD9E /* PhotoViewer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PhotoViewer.xcodeproj; path = PhotoViewer/PhotoViewer.xcodeproj; sourceTree = "<group>"; };
@@ -69,6 +77,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		3C2BE31D26CE88E700324B65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C2BE32126CE88E800324B65 /* ShoppingList.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3C3CE58126CD387A0008C2AB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +104,7 @@
 		3CA8E6C726CA84F0003AFD9E = {
 			isa = PBXGroup;
 			children = (
+				3C2BE31C26CE88E700324B65 /* ShoppingList.xcodeproj */,
 				3CDCA57926CE44EA00BCA491 /* AdvancedAutoLayout.xcodeproj */,
 				3C3CE58026CD387A0008C2AB /* WordScramble.xcodeproj */,
 				3CDD871826CBD1C200E8503C /* EasyBrowser.xcodeproj */,
@@ -178,6 +195,10 @@
 					ProjectRef = 3CA8E73A26CA89FE003AFD9E /* PhotoViewer.xcodeproj */;
 				},
 				{
+					ProductGroup = 3C2BE31D26CE88E700324B65 /* Products */;
+					ProjectRef = 3C2BE31C26CE88E700324B65 /* ShoppingList.xcodeproj */;
+				},
+				{
 					ProductGroup = 3C788F0926CBA26C00EA5FE0 /* Products */;
 					ProjectRef = 3C788F0826CBA26C00EA5FE0 /* SocialShare.xcodeproj */;
 				},
@@ -193,6 +214,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		3C2BE32126CE88E800324B65 /* ShoppingList.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ShoppingList.app;
+			remoteRef = 3C2BE32026CE88E800324B65 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		3C3CE58A26CD387B0008C2AB /* WordScramble.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
