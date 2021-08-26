@@ -50,6 +50,10 @@ class NameToFacesController: UICollectionViewController, UIImagePickerController
         let pc = UIImagePickerController()
         pc.allowsEditing = true
         pc.delegate = self
+        
+        if UIImagePickerController.isSourceTypeAvailable(.camera){
+            pc.sourceType = .camera
+        }
         present(pc, animated: true)
     }
     
@@ -72,16 +76,26 @@ class NameToFacesController: UICollectionViewController, UIImagePickerController
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let person = people[indexPath.item]
         
-        let ac = UIAlertController(title: "Rename Person", message: nil, preferredStyle: .alert)
-        ac.addTextField()
-        ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
-        ac.addAction(UIAlertAction(title: "OK", style: .default){
-            [weak self, weak ac]_ in
-            guard let text = ac?.textFields?[0].text else {return}
-            person.name = text
+        let ac = UIAlertController(title: "Person", message: nil, preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title:"Cancal", style: .cancel))
+        ac.addAction(UIAlertAction(title: "Delete", style: .destructive){[weak self]_ in
+            let index = self?.people.firstIndex(of: person)!
+            self?.people.remove(at: index!)
             self?.collectionView.reloadData()
         })
+        ac.addAction(UIAlertAction(title: "Rename", style: .default){[weak self]_ in
+            let rc = UIAlertController(title: "Rename Person", message: nil, preferredStyle: .alert)
+            rc.addTextField()
+            rc.addAction(UIAlertAction(title: "OK", style: .default){
+                [weak self, weak rc]_ in
+                guard let text = rc?.textFields?[0].text else {return}
+                person.name = text
+                self?.collectionView.reloadData()
+            })
+            self?.present(rc, animated: true)
+        })
         present(ac, animated: true)
+       
     }
 
 
