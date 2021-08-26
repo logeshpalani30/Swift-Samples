@@ -25,13 +25,14 @@ class PetitionsViewController: UITableViewController {
         let addCredit = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(showUrl))
         navigationItem.rightBarButtonItems = [filter, addCredit]
 
-        if let url = URL(string: urlString) {
-            if let data = try? Data(contentsOf: url) {
-                parse(json: data)
-                return
+        DispatchQueue.global(qos: .utility).async {
+            if let url = URL(string: self.urlString) {
+                if let data = try? Data(contentsOf: url) {
+                    self.parse(json: data)
+                    return
+                }
             }
         }
-        showError()
     }
     
     @objc func showFilter() {
@@ -54,6 +55,9 @@ class PetitionsViewController: UITableViewController {
         
     }
     func filterTableView(text: String) {
+        if text.isEmpty {
+            return
+        }
         petitions = orginalList.filter {
             petition in
             return petition.title.localizedCaseInsensitiveContains(text)
@@ -62,10 +66,9 @@ class PetitionsViewController: UITableViewController {
             showError(title: "Not found", message:"not found based on search")
         }
         tableView.reloadData()
-        
     }
     
-    func showError(title: String? = nil, message:String? = nil) {
+   @objc func showError(title: String? = nil, message:String? = nil) {
         let ac = UIAlertController(title: title ?? "Loading Error ", message: message ?? "Something went wrong", preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .default))
         present(ac, animated: true)
@@ -76,7 +79,9 @@ class PetitionsViewController: UITableViewController {
         if let jsonPetitions = try? decoder.decode(Petitions.self, from: json) {
             petitions = jsonPetitions.results
             orginalList = jsonPetitions.results
-            tableView.reloadData()
+            tableView.performSelector(onMainThread: #selector(tableView.reloadData), with: nil, waitUntilDone: false)
+        }else{
+            tableView.performSelector(onMainThread: #selector(showError), with: nil, waitUntilDone: false)
         }
     }
 

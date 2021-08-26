@@ -77,6 +77,13 @@
 			remoteGlobalIDString = 3CDD870126CBD1C100E8503C;
 			remoteInfo = EasyBrowser;
 		};
+		3CDD8C7626D66E5D00491DBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CDD8C6E26D66E5C00491DBD /* HangmanGame.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3CDD8C5726D66E5A00491DBD;
+			remoteInfo = HangmanGame;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +97,7 @@
 		3CDCA57926CE44EA00BCA491 /* AdvancedAutoLayout.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AdvancedAutoLayout.xcodeproj; path = AdvancedAutoLayout/AdvancedAutoLayout.xcodeproj; sourceTree = "<group>"; };
 		3CDD86BC26CBBD8000E8503C /* CountryFlags.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CountryFlags.xcodeproj; path = CountryFlags/CountryFlags.xcodeproj; sourceTree = "<group>"; };
 		3CDD871826CBD1C200E8503C /* EasyBrowser.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EasyBrowser.xcodeproj; path = EasyBrowser/EasyBrowser.xcodeproj; sourceTree = "<group>"; };
+		3CDD8C6E26D66E5C00491DBD /* HangmanGame.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HangmanGame.xcodeproj; path = HangmanGame/HangmanGame.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -136,6 +144,7 @@
 		3CA8E6C726CA84F0003AFD9E = {
 			isa = PBXGroup;
 			children = (
+				3CDD8C6E26D66E5C00491DBD /* HangmanGame.xcodeproj */,
 				3C86B4F926D4E01200F344C8 /* SwifyWords.xcodeproj */,
 				3C0A586826CF685700987C4C /* Whitehouse-Petitions.xcodeproj */,
 				3C2BE31C26CE88E700324B65 /* ShoppingList.xcodeproj */,
@@ -189,6 +198,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		3CDD8C6F26D66E5C00491DBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CDD8C7726D66E5D00491DBD /* HangmanGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXProject section */
@@ -223,6 +240,10 @@
 				{
 					ProductGroup = 3CA8E77F26CA8DF7003AFD9E /* Products */;
 					ProjectRef = 3CA8E77E26CA8DF7003AFD9E /* GuessTheFlag.xcodeproj */;
+				},
+				{
+					ProductGroup = 3CDD8C6F26D66E5C00491DBD /* Products */;
+					ProjectRef = 3CDD8C6E26D66E5C00491DBD /* HangmanGame.xcodeproj */;
 				},
 				{
 					ProductGroup = 3CA8E73B26CA89FE003AFD9E /* Products */;
@@ -324,6 +345,13 @@
 			fileType = wrapper.application;
 			path = EasyBrowser.app;
 			remoteRef = 3CDD871C26CBD1C300E8503C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3CDD8C7726D66E5D00491DBD /* HangmanGame.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = HangmanGame.app;
+			remoteRef = 3CDD8C7626D66E5D00491DBD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
