@@ -84,6 +84,13 @@
 			remoteGlobalIDString = 3CDD8C5726D66E5A00491DBD;
 			remoteInfo = HangmanGame;
 		};
+		3CFADE0226D7603C00319FE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CFADDF926D7603B00319FE5 /* NameToFaces.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3CFADDE226D7603900319FE5;
+			remoteInfo = NameToFaces;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +105,7 @@
 		3CDD86BC26CBBD8000E8503C /* CountryFlags.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CountryFlags.xcodeproj; path = CountryFlags/CountryFlags.xcodeproj; sourceTree = "<group>"; };
 		3CDD871826CBD1C200E8503C /* EasyBrowser.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EasyBrowser.xcodeproj; path = EasyBrowser/EasyBrowser.xcodeproj; sourceTree = "<group>"; };
 		3CDD8C6E26D66E5C00491DBD /* HangmanGame.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HangmanGame.xcodeproj; path = HangmanGame/HangmanGame.xcodeproj; sourceTree = "<group>"; };
+		3CFADDF926D7603B00319FE5 /* NameToFaces.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NameToFaces.xcodeproj; path = NameToFaces/NameToFaces.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -144,6 +152,7 @@
 		3CA8E6C726CA84F0003AFD9E = {
 			isa = PBXGroup;
 			children = (
+				3CFADDF926D7603B00319FE5 /* NameToFaces.xcodeproj */,
 				3CDD8C6E26D66E5C00491DBD /* HangmanGame.xcodeproj */,
 				3C86B4F926D4E01200F344C8 /* SwifyWords.xcodeproj */,
 				3C0A586826CF685700987C4C /* Whitehouse-Petitions.xcodeproj */,
@@ -206,6 +215,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		3CFADDFA26D7603B00319FE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CFADE0326D7603C00319FE5 /* NameToFaces.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXProject section */
@@ -244,6 +261,10 @@
 				{
 					ProductGroup = 3CDD8C6F26D66E5C00491DBD /* Products */;
 					ProjectRef = 3CDD8C6E26D66E5C00491DBD /* HangmanGame.xcodeproj */;
+				},
+				{
+					ProductGroup = 3CFADDFA26D7603B00319FE5 /* Products */;
+					ProjectRef = 3CFADDF926D7603B00319FE5 /* NameToFaces.xcodeproj */;
 				},
 				{
 					ProductGroup = 3CA8E73B26CA89FE003AFD9E /* Products */;
@@ -352,6 +373,13 @@
 			fileType = wrapper.application;
 			path = HangmanGame.app;
 			remoteRef = 3CDD8C7626D66E5D00491DBD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3CFADE0326D7603C00319FE5 /* NameToFaces.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = NameToFaces.app;
+			remoteRef = 3CFADE0226D7603C00319FE5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
