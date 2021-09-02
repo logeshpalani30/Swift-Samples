@@ -28,6 +28,13 @@
 			remoteGlobalIDString = 3C3CE56926CD38790008C2AB;
 			remoteInfo = WordScramble;
 		};
+		3C47425326E0930C007BA832 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C47424326E0930B007BA832 /* WhackAPenguin.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3C47422B26E0930B007BA832;
+			remoteInfo = WhackAPenguin;
+		};
 		3C788F0E26CBA26D00EA5FE0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3C788F0826CBA26C00EA5FE0 /* SocialShare.xcodeproj */;
@@ -62,6 +69,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = 3CC0F3FC26D8B10200FA9006;
 			remoteInfo = PachinkoGame;
+		};
+		3CC5048C26DE52DD0061AAE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CC5048326DE52DC0061AAE8 /* InstaFilter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3CC5046C26DE52D90061AAE8;
+			remoteInfo = InstaFilter;
 		};
 		3CDCA57D26CE44EA00BCA491 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -104,11 +118,13 @@
 		3C0A586826CF685700987C4C /* Whitehouse-Petitions.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Whitehouse-Petitions.xcodeproj"; path = "Whitehouse-Petitions/Whitehouse-Petitions.xcodeproj"; sourceTree = "<group>"; };
 		3C2BE31C26CE88E700324B65 /* ShoppingList.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShoppingList.xcodeproj; path = ShoppingList/ShoppingList.xcodeproj; sourceTree = "<group>"; };
 		3C3CE58026CD387A0008C2AB /* WordScramble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WordScramble.xcodeproj; path = WordScramble/WordScramble.xcodeproj; sourceTree = "<group>"; };
+		3C47424326E0930B007BA832 /* WhackAPenguin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WhackAPenguin.xcodeproj; path = WhackAPenguin/WhackAPenguin.xcodeproj; sourceTree = "<group>"; };
 		3C788F0826CBA26C00EA5FE0 /* SocialShare.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SocialShare.xcodeproj; path = SocialShare/SocialShare.xcodeproj; sourceTree = "<group>"; };
 		3C86B4F926D4E01200F344C8 /* SwifyWords.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwifyWords.xcodeproj; path = SwifyWords/SwifyWords.xcodeproj; sourceTree = "<group>"; };
 		3CA8E73A26CA89FE003AFD9E /* PhotoViewer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PhotoViewer.xcodeproj; path = PhotoViewer/PhotoViewer.xcodeproj; sourceTree = "<group>"; };
 		3CA8E77E26CA8DF7003AFD9E /* GuessTheFlag.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GuessTheFlag.xcodeproj; path = GuessTheFlag/GuessTheFlag.xcodeproj; sourceTree = "<group>"; };
 		3CC0F41426D8B10300FA9006 /* PachinkoGame.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PachinkoGame.xcodeproj; path = PachinkoGame/PachinkoGame.xcodeproj; sourceTree = "<group>"; };
+		3CC5048326DE52DC0061AAE8 /* InstaFilter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = InstaFilter.xcodeproj; path = InstaFilter/InstaFilter.xcodeproj; sourceTree = "<group>"; };
 		3CDCA57926CE44EA00BCA491 /* AdvancedAutoLayout.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AdvancedAutoLayout.xcodeproj; path = AdvancedAutoLayout/AdvancedAutoLayout.xcodeproj; sourceTree = "<group>"; };
 		3CDD86BC26CBBD8000E8503C /* CountryFlags.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CountryFlags.xcodeproj; path = CountryFlags/CountryFlags.xcodeproj; sourceTree = "<group>"; };
 		3CDD871826CBD1C200E8503C /* EasyBrowser.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EasyBrowser.xcodeproj; path = EasyBrowser/EasyBrowser.xcodeproj; sourceTree = "<group>"; };
@@ -141,6 +157,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		3C47424426E0930B007BA832 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C47425426E0930C007BA832 /* WhackAPenguin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3C788F0926CBA26C00EA5FE0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +184,8 @@
 		3CA8E6C726CA84F0003AFD9E = {
 			isa = PBXGroup;
 			children = (
+				3C47424326E0930B007BA832 /* WhackAPenguin.xcodeproj */,
+				3CC5048326DE52DC0061AAE8 /* InstaFilter.xcodeproj */,
 				3CC0F41426D8B10300FA9006 /* PachinkoGame.xcodeproj */,
 				3CFADDF926D7603B00319FE5 /* NameToFaces.xcodeproj */,
 				3CDD8C6E26D66E5C00491DBD /* HangmanGame.xcodeproj */,
@@ -196,6 +222,14 @@
 			isa = PBXGroup;
 			children = (
 				3CC0F41F26D8B10300FA9006 /* PachinkoGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CC5048426DE52DC0061AAE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CC5048D26DE52DD0061AAE8 /* InstaFilter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -280,6 +314,10 @@
 					ProjectRef = 3CDD8C6E26D66E5C00491DBD /* HangmanGame.xcodeproj */;
 				},
 				{
+					ProductGroup = 3CC5048426DE52DC0061AAE8 /* Products */;
+					ProjectRef = 3CC5048326DE52DC0061AAE8 /* InstaFilter.xcodeproj */;
+				},
+				{
 					ProductGroup = 3CFADDFA26D7603B00319FE5 /* Products */;
 					ProjectRef = 3CFADDF926D7603B00319FE5 /* NameToFaces.xcodeproj */;
 				},
@@ -302,6 +340,10 @@
 				{
 					ProductGroup = 3C86B4FA26D4E01200F344C8 /* Products */;
 					ProjectRef = 3C86B4F926D4E01200F344C8 /* SwifyWords.xcodeproj */;
+				},
+				{
+					ProductGroup = 3C47424426E0930B007BA832 /* Products */;
+					ProjectRef = 3C47424326E0930B007BA832 /* WhackAPenguin.xcodeproj */;
 				},
 				{
 					ProductGroup = 3C0A586926CF685700987C4C /* Products */;
@@ -340,6 +382,13 @@
 			remoteRef = 3C3CE58926CD387B0008C2AB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		3C47425426E0930C007BA832 /* WhackAPenguin.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = WhackAPenguin.app;
+			remoteRef = 3C47425326E0930C007BA832 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		3C788F0F26CBA26D00EA5FE0 /* SocialShare.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
@@ -373,6 +422,13 @@
 			fileType = wrapper.application;
 			path = PachinkoGame.app;
 			remoteRef = 3CC0F41E26D8B10300FA9006 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3CC5048D26DE52DD0061AAE8 /* InstaFilter.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = InstaFilter.app;
+			remoteRef = 3CC5048C26DE52DD0061AAE8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		3CDCA57E26CE44EA00BCA491 /* AdvancedAutoLayout.app */ = {

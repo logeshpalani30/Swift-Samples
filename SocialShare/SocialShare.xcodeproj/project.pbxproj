@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C47425D26E0D517007BA832 /* snowEffect.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3C47425B26E0D517007BA832 /* snowEffect.sks */; };
+		3C47425E26E0D517007BA832 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C47425C26E0D517007BA832 /* Assets.xcassets */; };
 		3C788EF526CBA26B00EA5FE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C788EF426CBA26B00EA5FE0 /* AppDelegate.swift */; };
 		3C788EF726CBA26B00EA5FE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C788EF626CBA26B00EA5FE0 /* SceneDelegate.swift */; };
 		3C788EF926CBA26B00EA5FE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C788EF826CBA26B00EA5FE0 /* ViewController.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C47425B26E0D517007BA832 /* snowEffect.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = snowEffect.sks; path = ../WhackAPenguin/WhackAPenguin/snowEffect.sks; sourceTree = "<group>"; };
+		3C47425C26E0D517007BA832 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C788EF126CBA26B00EA5FE0 /* SocialShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C788EF426CBA26B00EA5FE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C788EF626CBA26B00EA5FE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 		3C788EE826CBA26B00EA5FE0 = {
 			isa = PBXGroup;
 			children = (
+				3C47425B26E0D517007BA832 /* snowEffect.sks */,
+				3C47425C26E0D517007BA832 /* Assets.xcassets */,
 				3C788F1226CBA34900EA5FE0 /* Content */,
 				3C788EF326CBA26B00EA5FE0 /* SocialShare */,
 				3C788EF226CBA26B00EA5FE0 /* Products */,
@@ -170,11 +176,13 @@
 				3C788F2526CBA34A00EA5FE0 /* nssl0033.jpg in Resources */,
 				3C788F2126CBA34A00EA5FE0 /* nssl0051.jpg in Resources */,
 				3C788F1F26CBA34A00EA5FE0 /* nssl0091.jpg in Resources */,
+				3C47425E26E0D517007BA832 /* Assets.xcassets in Resources */,
 				3C788F2426CBA34A00EA5FE0 /* nssl0043.jpg in Resources */,
 				3C788F2626CBA34A00EA5FE0 /* nssl0034.jpg in Resources */,
 				3C788F1D26CBA34A00EA5FE0 /* nssl0049.jpg in Resources */,
 				3C788F2226CBA34A00EA5FE0 /* nssl0041.jpg in Resources */,
 				3C788F2326CBA34A00EA5FE0 /* nssl0042.jpg in Resources */,
+				3C47425D26E0D517007BA832 /* snowEffect.sks in Resources */,
 				3C788F0126CBA26C00EA5FE0 /* LaunchScreen.storyboard in Resources */,
 				3C788EFE26CBA26C00EA5FE0 /* Assets.xcassets in Resources */,
 				3C788F2026CBA34A00EA5FE0 /* nssl0045.jpg in Resources */,

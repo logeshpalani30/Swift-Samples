@@ -14,7 +14,27 @@ class NameToFacesController: UICollectionViewController, UIImagePickerController
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.leftBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: .add
-                                                                , target: self, action: #selector(addNewPerson))
+                                                                ,target: self, action: #selector(addNewPerson))
+
+        let defaults = UserDefaults.standard
+        if let savedPeople = defaults.object(forKey: "people") as? Data{
+            let jsonDecoder = JSONDecoder()
+            do {
+                let decodedData = try jsonDecoder.decode([Person].self, from: savedPeople)
+                people = decodedData
+            } catch  {
+                print("Decode not working")
+            }
+        }
+        
+//        let defaults = UserDefaults.standard
+//        if let savedData = defaults.object(forKey: "people") as? Data {
+//            if let decodedPeople = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedData) as? [Person] {
+//                people = decodedPeople
+//            }
+//        }
+        
+        
     }
 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -36,6 +56,7 @@ class NameToFacesController: UICollectionViewController, UIImagePickerController
         
         let person = Person(name: "Unknown", imageName: imageName)
         people.append(person)
+        save()
         collectionView.reloadData()
         
         dismiss(animated: true)
@@ -90,6 +111,7 @@ class NameToFacesController: UICollectionViewController, UIImagePickerController
                 [weak self, weak rc]_ in
                 guard let text = rc?.textFields?[0].text else {return}
                 person.name = text
+                self?.save()
                 self?.collectionView.reloadData()
             })
             self?.present(rc, animated: true)
@@ -119,7 +141,21 @@ class NameToFacesController: UICollectionViewController, UIImagePickerController
 
         return cell
     }
-
+    func save() {
+        let jsonEncoder = JSONEncoder()
+        if let savedData = try? jsonEncoder.encode(people){
+            let defaults = UserDefaults.standard
+            defaults.setValue(savedData, forKey: "people")
+        }else{
+            print("Failed to save")
+        }
+        
+//        if let savedData = try? NSKeyedArchiver.archivedData(withRootObject: people, requiringSecureCoding: false){
+//            let defaults = UserDefaults.standard
+//                defaults.set(savedData, forKey: "people")
+//        }
+        
+    }
 
     // MARK: UICollectionViewDelegate
 
