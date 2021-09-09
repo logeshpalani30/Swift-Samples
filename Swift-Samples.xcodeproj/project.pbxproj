@@ -21,6 +21,20 @@
 			remoteGlobalIDString = 3C2BE30526CE88E600324B65;
 			remoteInfo = ShoppingList;
 		};
+		3C32FFC826E87B150057784D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C32FFBE26E87B140057784D /* MapView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3C32FFA726E87B130057784D;
+			remoteInfo = MapView;
+		};
+		3C32FFFB26E8D91B0057784D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C32FFF726E8D91A0057784D /* SpaceshipDriving.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3C32FFDF26E8D9180057784D;
+			remoteInfo = SpaceshipDriving;
+		};
 		3C3CE58926CD387B0008C2AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3C3CE58026CD387A0008C2AB /* WordScramble.xcodeproj */;
@@ -124,6 +138,8 @@
 /* Begin PBXFileReference section */
 		3C0A586826CF685700987C4C /* Whitehouse-Petitions.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Whitehouse-Petitions.xcodeproj"; path = "Whitehouse-Petitions/Whitehouse-Petitions.xcodeproj"; sourceTree = "<group>"; };
 		3C2BE31C26CE88E700324B65 /* ShoppingList.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShoppingList.xcodeproj; path = ShoppingList/ShoppingList.xcodeproj; sourceTree = "<group>"; };
+		3C32FFBE26E87B140057784D /* MapView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MapView.xcodeproj; path = MapView/MapView.xcodeproj; sourceTree = "<group>"; };
+		3C32FFF726E8D91A0057784D /* SpaceshipDriving.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SpaceshipDriving.xcodeproj; path = SpaceshipDriving/SpaceshipDriving.xcodeproj; sourceTree = "<group>"; };
 		3C3CE58026CD387A0008C2AB /* WordScramble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WordScramble.xcodeproj; path = WordScramble/WordScramble.xcodeproj; sourceTree = "<group>"; };
 		3C47424326E0930B007BA832 /* WhackAPenguin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WhackAPenguin.xcodeproj; path = WhackAPenguin/WhackAPenguin.xcodeproj; sourceTree = "<group>"; };
 		3C47428A26E1037E007BA832 /* UIKitAnim.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIKitAnim.xcodeproj; path = UIKitAnim/UIKitAnim.xcodeproj; sourceTree = "<group>"; };
@@ -153,6 +169,22 @@
 			isa = PBXGroup;
 			children = (
 				3C2BE32126CE88E800324B65 /* ShoppingList.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C32FFBF26E87B140057784D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C32FFC926E87B150057784D /* MapView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C32FFF826E8D91A0057784D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C32FFFC26E8D91B0057784D /* SpaceshipDriving.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,6 +232,8 @@
 		3CA8E6C726CA84F0003AFD9E = {
 			isa = PBXGroup;
 			children = (
+				3C32FFF726E8D91A0057784D /* SpaceshipDriving.xcodeproj */,
+				3C32FFBE26E87B140057784D /* MapView.xcodeproj */,
 				3C47428A26E1037E007BA832 /* UIKitAnim.xcodeproj */,
 				3C47424326E0930B007BA832 /* WhackAPenguin.xcodeproj */,
 				3CC5048326DE52DC0061AAE8 /* InstaFilter.xcodeproj */,
@@ -335,6 +369,10 @@
 					ProjectRef = 3CC5048326DE52DC0061AAE8 /* InstaFilter.xcodeproj */;
 				},
 				{
+					ProductGroup = 3C32FFBF26E87B140057784D /* Products */;
+					ProjectRef = 3C32FFBE26E87B140057784D /* MapView.xcodeproj */;
+				},
+				{
 					ProductGroup = 3CFADDFA26D7603B00319FE5 /* Products */;
 					ProjectRef = 3CFADDF926D7603B00319FE5 /* NameToFaces.xcodeproj */;
 				},
@@ -353,6 +391,10 @@
 				{
 					ProductGroup = 3C788F0926CBA26C00EA5FE0 /* Products */;
 					ProjectRef = 3C788F0826CBA26C00EA5FE0 /* SocialShare.xcodeproj */;
+				},
+				{
+					ProductGroup = 3C32FFF826E8D91A0057784D /* Products */;
+					ProjectRef = 3C32FFF726E8D91A0057784D /* SpaceshipDriving.xcodeproj */;
 				},
 				{
 					ProductGroup = 3C86B4FA26D4E01200F344C8 /* Products */;
@@ -394,6 +436,20 @@
 			fileType = wrapper.application;
 			path = ShoppingList.app;
 			remoteRef = 3C2BE32026CE88E800324B65 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3C32FFC926E87B150057784D /* MapView.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = MapView.app;
+			remoteRef = 3C32FFC826E87B150057784D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3C32FFFC26E8D91B0057784D /* SpaceshipDriving.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SpaceshipDriving.app;
+			remoteRef = 3C32FFFB26E8D91B0057784D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		3C3CE58A26CD387B0008C2AB /* WordScramble.app */ = {
