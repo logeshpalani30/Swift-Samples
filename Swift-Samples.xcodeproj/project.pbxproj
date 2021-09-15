@@ -84,6 +84,13 @@
 			remoteGlobalIDString = 3CA8E76726CA8DF5003AFD9E;
 			remoteInfo = GuessTheFlag;
 		};
+		3CBDE3B626EA1C930089FBB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CBDE3A826EA1C920089FBB4 /* ShellApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3CBDE39126EA1C910089FBB4;
+			remoteInfo = ShellApp;
+		};
 		3CC0F41E26D8B10300FA9006 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3CC0F41426D8B10300FA9006 /* PachinkoGame.xcodeproj */;
@@ -147,6 +154,7 @@
 		3C86B4F926D4E01200F344C8 /* SwifyWords.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwifyWords.xcodeproj; path = SwifyWords/SwifyWords.xcodeproj; sourceTree = "<group>"; };
 		3CA8E73A26CA89FE003AFD9E /* PhotoViewer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PhotoViewer.xcodeproj; path = PhotoViewer/PhotoViewer.xcodeproj; sourceTree = "<group>"; };
 		3CA8E77E26CA8DF7003AFD9E /* GuessTheFlag.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GuessTheFlag.xcodeproj; path = GuessTheFlag/GuessTheFlag.xcodeproj; sourceTree = "<group>"; };
+		3CBDE3A826EA1C920089FBB4 /* ShellApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShellApp.xcodeproj; path = ShellApp/ShellApp.xcodeproj; sourceTree = "<group>"; };
 		3CC0F41426D8B10300FA9006 /* PachinkoGame.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PachinkoGame.xcodeproj; path = PachinkoGame/PachinkoGame.xcodeproj; sourceTree = "<group>"; };
 		3CC5048326DE52DC0061AAE8 /* InstaFilter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = InstaFilter.xcodeproj; path = InstaFilter/InstaFilter.xcodeproj; sourceTree = "<group>"; };
 		3CDCA57926CE44EA00BCA491 /* AdvancedAutoLayout.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AdvancedAutoLayout.xcodeproj; path = AdvancedAutoLayout/AdvancedAutoLayout.xcodeproj; sourceTree = "<group>"; };
@@ -232,6 +240,7 @@
 		3CA8E6C726CA84F0003AFD9E = {
 			isa = PBXGroup;
 			children = (
+				3CBDE3A826EA1C920089FBB4 /* ShellApp.xcodeproj */,
 				3C32FFF726E8D91A0057784D /* SpaceshipDriving.xcodeproj */,
 				3C32FFBE26E87B140057784D /* MapView.xcodeproj */,
 				3C47428A26E1037E007BA832 /* UIKitAnim.xcodeproj */,
@@ -265,6 +274,14 @@
 			isa = PBXGroup;
 			children = (
 				3CA8E78326CA8DF8003AFD9E /* GuessTheFlag.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CBDE3A926EA1C920089FBB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CBDE3B726EA1C930089FBB4 /* ShellApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -385,6 +402,10 @@
 					ProjectRef = 3CA8E73A26CA89FE003AFD9E /* PhotoViewer.xcodeproj */;
 				},
 				{
+					ProductGroup = 3CBDE3A926EA1C920089FBB4 /* Products */;
+					ProjectRef = 3CBDE3A826EA1C920089FBB4 /* ShellApp.xcodeproj */;
+				},
+				{
 					ProductGroup = 3C2BE31D26CE88E700324B65 /* Products */;
 					ProjectRef = 3C2BE31C26CE88E700324B65 /* ShoppingList.xcodeproj */;
 				},
@@ -499,6 +520,13 @@
 			fileType = wrapper.application;
 			path = GuessTheFlag.app;
 			remoteRef = 3CA8E78226CA8DF8003AFD9E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3CBDE3B726EA1C930089FBB4 /* ShellApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ShellApp.app;
+			remoteRef = 3CBDE3B626EA1C930089FBB4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		3CC0F41F26D8B10300FA9006 /* PachinkoGame.app */ = {
